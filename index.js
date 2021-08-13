@@ -1,7 +1,7 @@
 const express = require('express');
 const https = require('https')
 var cors = require('cors');
-var privateData = require('./private.json');
+var privateData = require('./secret.json');
 // Create Express Server
 const app = express();
 
