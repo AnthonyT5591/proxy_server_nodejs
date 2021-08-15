@@ -53,6 +53,6 @@ app.get('/send_proxy', (req, res) => {
 })
 
 // Info GET endpoint
-app.get('/info', (req, res, next) => {
-    res.send('This is a proxy service.');
+app.get('/vitals', (req, res, next) => {
+    res.json(`{"info":"This is a proxy service.","date":"${new Date(Date.now())}"}`);
 });
